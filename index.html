@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ISHITA INFOTECH SERVICES | Loan & Financial Advisory</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:Segoe UI,Arial,sans-serif;
+  background:#f5f7fb;
+  color:#333;
+  scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+nav{
+  background:#0a3d62;
+  position:sticky;top:0;z-index:999;
+}
+nav ul{
+  display:flex;justify-content:center;
+  list-style:none;flex-wrap:wrap;
+}
+nav ul li a{
+  color:#fff;padding:15px 20px;
+  text-decoration:none;font-weight:600;
+}
+nav ul li a:hover{background:#08314e}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg,#0a3d62,#1e5799);
+  color:#fff;text-align:center;
+  padding:80px 20px;
+}
+header h1{font-size:36px}
+header p{margin-top:10px;font-size:18px}
+
+/* SECTION */
+section{
+  max-width:1150px;
+  margin:45px auto;
+  background:#fff;
+  padding:40px 30px;
+  border-radius:15px;
+  box-shadow:0 12px 28px rgba(0,0,0,.08);
+}
+h2{text-align:center;color:#0a3d62;margin-bottom:25px}
+
+/* ABOUT */
+.about-text{
+  max-width:900px;
+  margin:auto;text-align:center;
+  line-height:1.8;
+}
+
+/* WHY CHOOSE US */
+.choose-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+.choose-card{
+  background:#f4f7fb;
+  padding:25px;border-radius:12px;
+  text-align:center;
+}
+.choose-card i{
+  font-size:32px;color:#0a3d62;margin-bottom:10px;
+}
+
+/* BANK SLIDER */
+.slider{overflow:hidden}
+.slider-track{
+  display:flex;width:max-content;
+  animation:scroll 22s linear infinite;
+}
+.bank-box{
+  width:180px;height:80px;
+  margin:0 20px;
+  background:#f4f7fb;
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  font-weight:700;
+  color:#0a3d62;
+}
+.bank-box img{
+  max-height:55px;
+  max-width:150px;
+}
+.bank-box span{
+  display:none;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+@keyframes scroll{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-50%)}
+}
+
+/* SERVICES */
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+.service-card{
+  background:#f4f7fb;
+  padding:25px;border-radius:12px;
+}
+.service-card h3{text-align:center;color:#0a3d62}
+.service-card li{
+  list-style:none;
+  text-align:center;
+  padding:7px 0;
+}
+
+/* TESTIMONIAL */
+.test-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+.test-card{
+  background:#f9fbff;
+  padding:25px;border-radius:12px;
+}
+.stars{color:#f1c40f}
+
+/* EMI */
+.emi-box{max-width:500px;margin:auto}
+.emi-box input,.emi-box button{
+  width:100%;padding:12px;
+  margin:10px 0;border-radius:6px;
+  border:1px solid #ccc;
+}
+.emi-box button{
+  background:#0a3d62;color:#fff;
+  font-weight:600;cursor:pointer;
+}
+.emi-result{text-align:center;font-size:18px}
+
+/* CONTACT */
+.contact-icons{
+  display:flex;justify-content:center;
+  gap:25px;font-size:28px;
+}
+.contact-icons a{color:#0a3d62}
+
+/* FOOTER */
+footer{
+  background:#0a3d62;
+  color:#fff;text-align:center;
+  padding:18px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#why">Why Choose Us</a></li>
+<li><a href="#banks">Banks</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#testimonials">Testimonials</a></li>
+<li><a href="#emi">EMI</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<header id="home">
+<h1>ISHITA INFOTECH SERVICES</h1>
+<p>Loan • Insurance • Investment Advisory</p>
+</header>
+
+<section id="about">
+<h2>About Us</h2>
+<p class="about-text">
+<strong>ISHITA INFOTECH SERVICES</strong> is a professional financial advisory firm
+providing loans, insurance and investment solutions in partnership with
+leading banks and NBFCs.
+<br><br>
+We focus on transparency, fast processing and customer satisfaction.
+<br><br>
+<em>We are an independent advisory service, not a bank or NBFC.</em>
+</p>
+</section>
+
+<section id="why">
+<h2>Why Choose Us</h2>
+<div class="choose-grid">
+<div class="choose-card">
+<i class="fas fa-handshake"></i>
+<h4>Trusted Advisory</h4>
+<p>Client-first approach with complete transparency.</p>
+</div>
+<div class="choose-card">
+<i class="fas fa-university"></i>
+<h4>Multiple Banks</h4>
+<p>Compare offers from top banks & NBFCs.</p>
+</div>
+<div class="choose-card">
+<i class="fas fa-clock"></i>
+<h4>Fast Processing</h4>
+<p>Quick approvals & minimum documentation.</p>
+</div>
+<div class="choose-card">
+<i class="fas fa-headset"></i>
+<h4>Dedicated Support</h4>
+<p>Personal assistance from start to finish.</p>
+</div>
+</div>
+</section>
+
+<section id="banks">
+<h2>Our Banking Partners</h2>
+<div class="slider">
+<div class="slider-track">
+
+<div class="bank-box">
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/SBI-logo.svg">
+<span>SBI</span>
+</div>
+
+<div class="bank-box">
+<img src="images/hdfc.png" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<span>HDFC BANK</span>
+</div>
+
+<div class="bank-box">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/12/ICICI_Bank_Logo.svg">
+<span>ICICI BANK</span>
+</div>
+
+<div class="bank-box">
+<img src="images/axis.png" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<span>AXIS BANK</span>
+</div>
+
+<div class="bank-box">
+<img src="images/kotak.png" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<span>KOTAK</span>
+</div>
+
+<div class="bank-box">
+<img src="images/bajaj.png" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<span>BAJAJ FINANCE</span>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="services">
+<h2>Our Services</h2>
+<div class="service-grid">
+<div class="service-card">
+<h3>Loans</h3>
+<ul>
+<li>✔ Personal Loan</li>
+<li>✔ Home Loan</li>
+<li>✔ Business Loan</li>
+<li>✔ Car Loan</li>
+<li>✔ Education Loan</li>
+</ul>
+</div>
+<div class="service-card">
+<h3>Insurance</h3>
+<ul>
+<li>✔ Life Insurance</li>
+<li>✔ Health Insurance</li>
+<li>✔ Motor Insurance</li>
+<li>✔ General Insurance</li>
+</ul>
+</div>
+<div class="service-card">
+<h3>Other Services</h3>
+<ul>
+<li>✔ Mutual Funds</li>
+<li>✔ SIP Investment</li>
+<li>✔ Corporate Bonds</li>
+<li>✔ Financial Planning</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="testimonials">
+<h2>Client Testimonials</h2>
+<div class="test-grid">
+<div class="test-card">
+<div class="stars">★★★★★</div>
+<strong>Rahul Sharma</strong><br>
+Home Loan
+<p>Smooth process & best interest rate.</p>
+</div>
+<div class="test-card">
+<div class="stars">★★★★★</div>
+<strong>Neha Verma</strong><br>
+Personal Loan
+<p>Fast approval and clear guidance.</p>
+</div>
+<div class="test-card">
+<div class="stars">★★★★★</div>
+<strong>Amit Singh</strong><br>
+Insurance
+<p>Very professional and helpful service.</p>
+</div>
+</div>
+</section>
+
+<section id="emi">
+<h2>EMI Calculator</h2>
+<div class="emi-box">
+<input type="number" id="amount" placeholder="Loan Amount">
+<input type="number" id="rate" placeholder="Interest Rate %">
+<input type="number" id="years" placeholder="Tenure (Years)">
+<button onclick="calcEMI()">Calculate EMI</button>
+<div class="emi-result" id="emiResult"></div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<div class="contact-icons">
+<a href="tel:8810177778"><i class="fas fa-phone"></i></a>
+<a href="mailto:ishitainfotechservices@gmail.com"><i class="fas fa-envelope"></i></a>
+<a href="https://wa.me/918810177778?text=Hello%20I%20am%20interested%20in%20loan%20services%20from%20ISHITA%20INFOTECH%20SERVICES"></a>
+<a href="https://wa.me/918810177778"><i class="fab fa-whatsapp"></i></a>
+<a href="https://www.instagram.com/ishitainfotechservices?igsh=OGZqcTU1cWt4YnF1"><i class="fab fa-instagram"></i></a>
+</div>
+</section>
+
+<footer>
+© 2026 ISHITA INFOTECH SERVICES
+</footer>
+
+<script>
+function calcEMI(){
+let P=amount.value;
+let R=rate.value/12/100;
+let N=years.value*12;
+let EMI=(P*R*Math.pow(1+R,N))/(Math.pow(1+R,N)-1);
+emiResult.innerHTML="Monthly EMI: ₹ "+EMI.toFixed(2);
+}
+</script>
+
+</body>
+</html>
